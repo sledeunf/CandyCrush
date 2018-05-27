@@ -22,7 +22,7 @@
         <Button fx:id="btn_quitter" GridPane.halignment="CENTER" prefWidth="300" text="Quitter" GridPane.rowIndex="4" />
 
         <columnConstraints>
-            <ColumnConstraints hgrow="SOMETIMES" percentWidth="100" />
+            <ColumnConstraints hgrow="ALWAYS" percentWidth="100" />
         </columnConstraints>
       <rowConstraints>
          <RowConstraints />

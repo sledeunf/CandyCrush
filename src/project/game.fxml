@@ -1,10 +1,38 @@
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
+<?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.control.Label?>
-<GridPane fx:controller="project.GameController"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-    <HBox prefHeight="50" GridPane.hgrow="ALWAYS" style="-fx-background-color:#123456;"></HBox>
-    <Label text="game"/>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane prefHeight="500" prefWidth="500" xmlns="http://javafx.com/javafx/8.0.161-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.GameController">
+    <MenuBar layoutY="1.0" maxWidth="Infinity" prefHeight="30.0" GridPane.columnIndex="0" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0">
+        <menus>
+            <Menu mnemonicParsing="false" text="Jeu">
+                <items>
+                    <MenuItem mnemonicParsing="false" text="Recommencer" />
+                    <MenuItem mnemonicParsing="false" text="Taille de la grille" />
+                    <MenuItem fx:id="menu_quitter" mnemonicParsing="false" text="Quitter" />
+                </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Aide">
+                <items>
+                    <MenuItem mnemonicParsing="false" text="Règles du jeu" />
+                </items>
+            </Menu>
+        </menus>
+    </MenuBar>
+    <Canvas fx:id="game_area" height="500.0" style="-fx-background-color: #123456" width="500.0" GridPane.columnIndex="0" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+
+    </Canvas>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
 </GridPane>
