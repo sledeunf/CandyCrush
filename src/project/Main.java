@@ -18,9 +18,9 @@ public class Main extends Application {
         addScene("menu", "menu.fxml", "Menu", 525, 338, false);
         addScene("game", "game.fxml", "Jeux", 525, 555, false);
         addScene("scores", "scores.fxml", "Meilleurs scores", 600, 338, false);
+        addScene("help", "help.fxml", "Aide", 525, 338, true);
 
         setScene("menu");
-
     }
 
     public static void setScene(String name){

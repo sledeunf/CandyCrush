@@ -1,0 +1,9 @@
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<GridPane fx:controller="project.HelpController"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <HBox prefHeight="50" GridPane.hgrow="ALWAYS" style="-fx-background-color:#123456;"></HBox>
+    <Label text="Comment jouer?"/>
+</GridPane>
